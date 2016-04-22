@@ -1,5 +1,7 @@
 FROM tb4mmaggots/java
 
+MAINTAINER Riaan Stegmann(tb4mmaggots)
+
 RUN apk update \
     && apk upgrade \
     && apk add curl
@@ -10,3 +12,7 @@ RUN curl -Ls http://apache.saix.net/maven/maven-3/3.3.9/binaries/apache-maven-3.
 
 ENV MAVEN_HOME=/usr/local/maven3
 ENV PATH=$PATH:$MAVEN_HOME/bin
+
+VOLUME /build
+
+WORKDIR /build
