@@ -16,3 +16,6 @@ ENV PATH=$PATH:$MAVEN_HOME/bin
 VOLUME /build
 
 WORKDIR /build
+
+#Cleanup
+RUN rm -rf /tmp/*.tar.gz
