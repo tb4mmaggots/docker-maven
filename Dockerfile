@@ -19,3 +19,5 @@ WORKDIR /build
 
 #Cleanup
 RUN rm -rf /tmp/*.tar.gz
+
+ENTRYPOINT mvn
