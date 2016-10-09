@@ -1,4 +1,4 @@
-FROM tb4mmaggots/java
+FROM 8-jre-alpine
 
 MAINTAINER Riaan Stegmann(tb4mmaggots)
 
